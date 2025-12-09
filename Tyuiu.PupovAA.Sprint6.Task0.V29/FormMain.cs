@@ -14,7 +14,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task0.V29
             DataService ds = new DataService();
             try
             {
-                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxX.Text)));
+                textBoxResult.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxX.Text.Trim())));
             }
             catch
             {
@@ -30,9 +30,6 @@ namespace Tyuiu.PupovAA.Sprint6.Task0.V29
             MessageBox.Show("Task0 выполнил студент группы »Ѕ —б-25-1 ѕупов јртЄм јндреевич", "—ообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
