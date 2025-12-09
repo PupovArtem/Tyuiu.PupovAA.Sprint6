@@ -174,6 +174,8 @@
             Controls.Add(buttonHelp__PAA);
             Controls.Add(buttonReady_PAA);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormMain";
             Text = "Спринт6 Таск1 Пупов Артём ИбКСб-25-1";
             groupTask__PAA.ResumeLayout(false);
