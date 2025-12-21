@@ -30,14 +30,14 @@ public partial class FormMain : Form
         {
             for (int j = 0; j < 5; j++)
             {
-                dataGridViewMatrix_GAE.Rows[i].Cells[j].Value = sortedMatrix[i, j].ToString();
+                dataGridViewMatrix.Rows[i].Cells[j].Value = sortedMatrix[i, j].ToString();
             }
         }
     }
 
     private void FormMain_Load(object sender, EventArgs e)
     {
-        dataGridViewMatrix_GAE.ColumnCount = 5;
-        dataGridViewMatrix_GAE.RowCount = 5;
+        dataGridViewMatrix.ColumnCount = 5;
+        dataGridViewMatrix.RowCount = 5;
     }
 }

@@ -29,122 +29,122 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            groupBoxTask_GAE = new GroupBox();
-            textBoxTask_GAE = new TextBox();
-            groupBoxOutput_GAE = new GroupBox();
-            buttonHelp_GAE = new Button();
-            buttonExecute_GAE = new Button();
-            dataGridViewMatrix_GAE = new DataGridView();
-            labelResult_GAE = new Label();
-            groupBoxTask_GAE.SuspendLayout();
-            groupBoxOutput_GAE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix_GAE).BeginInit();
+            groupBoxTask = new GroupBox();
+            textBoxTask = new TextBox();
+            groupBoxOutput = new GroupBox();
+            buttonHelp = new Button();
+            buttonExecute = new Button();
+            dataGridViewMatrix = new DataGridView();
+            labelResult = new Label();
+            groupBoxTask.SuspendLayout();
+            groupBoxOutput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).BeginInit();
             SuspendLayout();
             // 
             // groupBoxTask_GAE
             // 
-            groupBoxTask_GAE.Controls.Add(textBoxTask_GAE);
-            groupBoxTask_GAE.Location = new Point(12, 12);
-            groupBoxTask_GAE.Name = "groupBoxTask_GAE";
-            groupBoxTask_GAE.Size = new Size(543, 378);
-            groupBoxTask_GAE.TabIndex = 2;
-            groupBoxTask_GAE.TabStop = false;
-            groupBoxTask_GAE.Text = "Условие";
+            groupBoxTask.Controls.Add(textBoxTask);
+            groupBoxTask.Location = new Point(12, 12);
+            groupBoxTask.Name = "groupBoxTask_GAE";
+            groupBoxTask.Size = new Size(543, 378);
+            groupBoxTask.TabIndex = 2;
+            groupBoxTask.TabStop = false;
+            groupBoxTask.Text = "Условие";
             // 
             // textBoxTask_GAE
             // 
-            textBoxTask_GAE.Location = new Point(6, 26);
-            textBoxTask_GAE.Multiline = true;
-            textBoxTask_GAE.Name = "textBoxTask_GAE";
-            textBoxTask_GAE.ReadOnly = true;
-            textBoxTask_GAE.Size = new Size(531, 346);
-            textBoxTask_GAE.TabIndex = 0;
-            textBoxTask_GAE.Text = resources.GetString("textBoxTask_GAE.Text");
+            textBoxTask.Location = new Point(6, 26);
+            textBoxTask.Multiline = true;
+            textBoxTask.Name = "textBoxTask_GAE";
+            textBoxTask.ReadOnly = true;
+            textBoxTask.Size = new Size(531, 346);
+            textBoxTask.TabIndex = 0;
+            textBoxTask.Text = resources.GetString("textBoxTask_GAE.Text");
             // 
             // groupBoxOutput_GAE
             // 
-            groupBoxOutput_GAE.Controls.Add(buttonHelp_GAE);
-            groupBoxOutput_GAE.Controls.Add(buttonExecute_GAE);
-            groupBoxOutput_GAE.Controls.Add(dataGridViewMatrix_GAE);
-            groupBoxOutput_GAE.Controls.Add(labelResult_GAE);
-            groupBoxOutput_GAE.Location = new Point(561, 12);
-            groupBoxOutput_GAE.Name = "groupBoxOutput_GAE";
-            groupBoxOutput_GAE.Size = new Size(303, 378);
-            groupBoxOutput_GAE.TabIndex = 7;
-            groupBoxOutput_GAE.TabStop = false;
-            groupBoxOutput_GAE.Text = "Вывод данных";
+            groupBoxOutput.Controls.Add(buttonHelp);
+            groupBoxOutput.Controls.Add(buttonExecute);
+            groupBoxOutput.Controls.Add(dataGridViewMatrix);
+            groupBoxOutput.Controls.Add(labelResult);
+            groupBoxOutput.Location = new Point(561, 12);
+            groupBoxOutput.Name = "groupBoxOutput_GAE";
+            groupBoxOutput.Size = new Size(303, 378);
+            groupBoxOutput.TabIndex = 7;
+            groupBoxOutput.TabStop = false;
+            groupBoxOutput.Text = "Вывод данных";
             // 
             // buttonHelp_GAE
             // 
-            buttonHelp_GAE.Location = new Point(150, 343);
-            buttonHelp_GAE.Name = "buttonHelp_GAE";
-            buttonHelp_GAE.Size = new Size(29, 29);
-            buttonHelp_GAE.TabIndex = 3;
-            buttonHelp_GAE.Text = "?";
-            buttonHelp_GAE.UseVisualStyleBackColor = true;
-            buttonHelp_GAE.Click += buttonHelp_GAE_Click;
+            buttonHelp.Location = new Point(150, 343);
+            buttonHelp.Name = "buttonHelp_GAE";
+            buttonHelp.Size = new Size(29, 29);
+            buttonHelp.TabIndex = 3;
+            buttonHelp.Text = "?";
+            buttonHelp.UseVisualStyleBackColor = true;
+            buttonHelp.Click += buttonHelp_GAE_Click;
             // 
             // buttonExecute_GAE
             // 
-            buttonExecute_GAE.Location = new Point(185, 343);
-            buttonExecute_GAE.Name = "buttonExecute_GAE";
-            buttonExecute_GAE.Size = new Size(112, 29);
-            buttonExecute_GAE.TabIndex = 2;
-            buttonExecute_GAE.Text = "Выполнить";
-            buttonExecute_GAE.UseVisualStyleBackColor = true;
-            buttonExecute_GAE.Click += buttonExecute_GAE_Click;
+            buttonExecute.Location = new Point(185, 343);
+            buttonExecute.Name = "buttonExecute_GAE";
+            buttonExecute.Size = new Size(112, 29);
+            buttonExecute.TabIndex = 2;
+            buttonExecute.Text = "Выполнить";
+            buttonExecute.UseVisualStyleBackColor = true;
+            buttonExecute.Click += buttonExecute_GAE_Click;
             // 
             // dataGridViewMatrix_GAE
             // 
-            dataGridViewMatrix_GAE.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewMatrix_GAE.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            dataGridViewMatrix_GAE.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewMatrix_GAE.ColumnHeadersVisible = false;
-            dataGridViewMatrix_GAE.Location = new Point(6, 49);
-            dataGridViewMatrix_GAE.Name = "dataGridViewMatrix_GAE";
-            dataGridViewMatrix_GAE.RowHeadersVisible = false;
-            dataGridViewMatrix_GAE.RowHeadersWidth = 20;
-            dataGridViewMatrix_GAE.Size = new Size(291, 288);
-            dataGridViewMatrix_GAE.TabIndex = 1;
+            dataGridViewMatrix.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewMatrix.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            dataGridViewMatrix.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewMatrix.ColumnHeadersVisible = false;
+            dataGridViewMatrix.Location = new Point(6, 49);
+            dataGridViewMatrix.Name = "dataGridViewMatrix_GAE";
+            dataGridViewMatrix.RowHeadersVisible = false;
+            dataGridViewMatrix.RowHeadersWidth = 20;
+            dataGridViewMatrix.Size = new Size(291, 288);
+            dataGridViewMatrix.TabIndex = 1;
             // 
             // labelResult_GAE
             // 
-            labelResult_GAE.AutoSize = true;
-            labelResult_GAE.Location = new Point(6, 26);
-            labelResult_GAE.Name = "labelResult_GAE";
-            labelResult_GAE.Size = new Size(78, 20);
-            labelResult_GAE.TabIndex = 0;
-            labelResult_GAE.Text = "Результат:";
+            labelResult.AutoSize = true;
+            labelResult.Location = new Point(6, 26);
+            labelResult.Name = "labelResult_GAE";
+            labelResult.Size = new Size(78, 20);
+            labelResult.TabIndex = 0;
+            labelResult.Text = "Результат:";
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(876, 402);
-            Controls.Add(groupBoxOutput_GAE);
-            Controls.Add(groupBoxTask_GAE);
+            Controls.Add(groupBoxOutput);
+            Controls.Add(groupBoxTask);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 3 | Вариант 15 | Гридин А. Е.";
             Load += FormMain_Load;
-            groupBoxTask_GAE.ResumeLayout(false);
-            groupBoxTask_GAE.PerformLayout();
-            groupBoxOutput_GAE.ResumeLayout(false);
-            groupBoxOutput_GAE.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix_GAE).EndInit();
+            groupBoxTask.ResumeLayout(false);
+            groupBoxTask.PerformLayout();
+            groupBoxOutput.ResumeLayout(false);
+            groupBoxOutput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBoxTask_GAE;
-        private TextBox textBoxTask_GAE;
-        private GroupBox groupBoxOutput_GAE;
-        private Button buttonHelp_GAE;
-        private Button buttonExecute_GAE;
-        private DataGridView dataGridViewMatrix_GAE;
-        private Label labelResult_GAE;
+        private GroupBox groupBoxTask;
+        private TextBox textBoxTask;
+        private GroupBox groupBoxOutput;
+        private Button buttonHelp;
+        private Button buttonExecute;
+        private DataGridView dataGridViewMatrix;
+        private Label labelResult;
     }
 }
