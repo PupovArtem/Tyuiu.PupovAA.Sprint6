@@ -11,7 +11,7 @@ public partial class FormMain : Form
 
     private void buttonHelp_GAE_Click(object sender, EventArgs e)
     {
-        MessageBox.Show("Таск 3 выполнил студент группы ИИПБ-24-2 Гридин Артём Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show("Таск 3 выполнил студент группы ИБКСб-25-1 Пупов Артём Андреевич ", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 
     private void buttonExecute_GAE_Click(object sender, EventArgs e)

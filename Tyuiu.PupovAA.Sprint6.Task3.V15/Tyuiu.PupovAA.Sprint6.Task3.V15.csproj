@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tyuiu.GridinAE.Sprint6.Task3.V15.Lib\Tyuiu.GridinAE.Sprint6.Task3.V15.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.PupovAA.Sprint6.Task3.V15.Lib\Tyuiu.PupovAA.Sprint6.Task3.V15.Lib.csproj" />
   </ItemGroup>
 
 </Project>
