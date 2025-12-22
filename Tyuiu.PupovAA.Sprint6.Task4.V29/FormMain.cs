@@ -23,7 +23,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task4.V29
                 int len = ds.GetMassFunction(BoxStart, BoxEnd).Length;
                 double[] arr = new double[len];
                 double[] valarr = ds.GetMassFunction(BoxStart, BoxEnd);
-                this.chartFunc_PAA.Titles.Add("График функции");
+                
                 this.chartFunc_PAA.ChartAreas[0].AxisX.Title = "Ось Х";
                 this.chartFunc_PAA.ChartAreas[0].AxisY.Title = "Ось Y";
                 textBoxResult.Text = "";
