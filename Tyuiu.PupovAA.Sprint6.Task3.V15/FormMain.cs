@@ -40,4 +40,9 @@ public partial class FormMain : Form
         dataGridViewMatrix.ColumnCount = 5;
         dataGridViewMatrix.RowCount = 5;
     }
+
+    private void dataGridViewMatrix_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+
+    }
 }

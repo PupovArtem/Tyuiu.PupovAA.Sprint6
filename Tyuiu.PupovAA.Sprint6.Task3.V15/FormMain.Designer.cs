@@ -106,6 +106,7 @@
             dataGridViewMatrix.RowHeadersWidth = 20;
             dataGridViewMatrix.Size = new Size(291, 288);
             dataGridViewMatrix.TabIndex = 1;
+            dataGridViewMatrix.CellContentClick += dataGridViewMatrix_CellContentClick;
             // 
             // labelResult
             // 
