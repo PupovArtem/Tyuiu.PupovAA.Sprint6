@@ -1,0 +1,62 @@
+﻿using Tyuiu.PupovAA.Sprint6.Task4.V29.Lib;
+namespace Tyuiu.PupovAA.Sprint6.Task4.V29
+{
+    public partial class FormMain : Form
+    {
+        public FormMain()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Task4 выполнил студент группы ИБКСб-25-1 Пупов Артём Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        DataService ds = new DataService();
+
+        private void buttonDone_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int BoxStart = Convert.ToInt32(textBoxStart.Text);
+                int BoxEnd = Convert.ToInt32(textBoxEnd.Text);
+                int len = ds.GetMassFunction(BoxStart, BoxEnd).Length;
+                double[] arr = new double[len];
+                double[] valarr = ds.GetMassFunction(BoxStart, BoxEnd);
+                this.chartFunc_PAA.Titles.Add("График функции");
+                this.chartFunc_PAA.ChartAreas[0].AxisX.Title = "Ось Х";
+                this.chartFunc_PAA.ChartAreas[0].AxisY.Title = "Ось Y";
+                textBoxResult.Text = "";
+                chartFunc_PAA.Series[0].Points.AddXY(BoxStart, valarr);
+                for (int i = 0; i < len; i++)
+                {
+                    this.chartFunc_PAA.Series[0].Points.AddXY(BoxStart, valarr);
+                    textBoxResult.AppendText(valarr[i] + Environment.NewLine);
+                    BoxStart++;
+                }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show($"{ ex.Message}");
+            }
+        }
+
+        private void chartFunc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path = $@"{Directory.GetCurrentDirectory()}\OutputFileTask4.txt";
+                File.WriteAllText(path, textBoxResult.Text);
+                DialogResult dialogResult = MessageBox.Show("Файл" + path + "Сохранен успешно\n Открыть его в блокноте?", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                dialogResult = DialogResult.Yes;
+                System.Diagnostics.Process txt = new System.Diagnostics.Process();
+                txt.StartInfo.FileName = "notepad.exe";
+                txt.StartInfo.Arguments = path;
+            }
+            catch
+            {
+                MessageBox.Show("Fail");
+            }
+        }
+    }
+}

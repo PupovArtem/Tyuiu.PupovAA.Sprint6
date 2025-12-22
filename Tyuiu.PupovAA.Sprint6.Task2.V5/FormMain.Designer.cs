@@ -95,6 +95,7 @@
             dataGridViewres.RowHeadersWidth = 51;
             dataGridViewres.Size = new Size(127, 353);
             dataGridViewres.TabIndex = 3;
+            dataGridViewres.CellContentClick += dataGridViewres_CellContentClick;
             // 
             // Column1
             // 

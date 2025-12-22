@@ -56,7 +56,12 @@ namespace Tyuiu.PupovAA.Sprint6.Task2.V5
 
         private void buttonRes_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonRes.BackColor=Color.Blue;
+            buttonRes.BackColor = Color.Blue;
+        }
+
+        private void dataGridViewres_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
