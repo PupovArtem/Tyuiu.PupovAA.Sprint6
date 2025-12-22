@@ -25,7 +25,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task4.V29
                 double[] valarr = ds.GetMassFunction(BoxStart, BoxEnd);
                 
                 this.chartFunc_PAA.ChartAreas[0].AxisX.Title = "Ось Х";
-                this.chartFunc_PAA.ChartAreas[0].AxisY.Title = "Ось Y";
+                this.chartFunc_PAA.ChartAreas[0].AxisY.Title = "Ось Z";
                 textBoxResult.Text = "";
                 chartFunc_PAA.Series[0].Points.AddXY(BoxStart, valarr);
                 for (int i = 0; i < len; i++)
