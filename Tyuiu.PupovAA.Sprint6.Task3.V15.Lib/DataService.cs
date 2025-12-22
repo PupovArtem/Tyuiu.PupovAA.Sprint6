@@ -2,7 +2,7 @@
 
 using tyuiu.cources.programming.interfaces.Sprint6;
 
-public class DataService : 
+public class DataService : ISprint6Task3V15
 {
     public int[,] Calculate(int[,] matrix)
     {
