@@ -14,20 +14,20 @@ namespace Tyuiu.PupovAA.Sprint6.Task5.V23.Lib
                     len++;
                 }
             }
-            double[] numsArrayy = new double[len];
+            double[] numsArray = new double[len];
             int index = 0;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    numsArrayy[index] = Convert.ToDouble(line);
+                    numsArray[index] = Convert.ToDouble(line);
                     index++;
                 }
             }
-            numsArrayy = numsArrayy.Where(val => val < 0).ToArray();
+            numsArray = numsArray.Where(val => val < 0).ToArray();
 
-            return numsArrayy;
+            return numsArray;
         }
     }
 }
