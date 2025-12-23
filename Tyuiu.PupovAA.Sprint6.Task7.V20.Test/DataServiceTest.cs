@@ -1,6 +1,7 @@
-﻿using Tyuiu.PupovAA.Sprint6.Task5.V23.Lib;
+﻿using System.IO;
+using Tyuiu.PupovAA.Sprint6.Task7.V20.Lib;
 
-namespace Tyuiu.PupovAA.Sprint6.Task5.V23.Test
+namespace Tyuiu.PupovAA.Sprint6.Task7.V20.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -8,7 +9,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task5.V23.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\artem\source\repos\Tyuiu.PupovAA.Sprint6\Tyuiu.PupovAA.Sprint6.Task6.V20.Lib";
+            string path = @"C:\Пользователи\artem\source\repos\Tyuiu.PupovAA.Sprint6\Tyuiu.PupovAA.Sprint6.Task7.V20.Lib\Текстовый документ";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;

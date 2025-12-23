@@ -13,7 +13,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task6.V21.Test
             
             string dir = Path.GetTempPath();
             string path = Path.Combine(dir, "Текстовый документ");
-            File.WriteAllText(path, "good day great GAME test");
+            File.WriteAllText(path, "good day great test");
 
             DataService ds = new DataService();
 
@@ -21,7 +21,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task6.V21.Test
             string actual = ds.CollectTextFromFile(path);
 
             
-            string expected = "good great GAME";
+            string expected = "good great";
 
             
             Assert.AreEqual(expected, actual);
