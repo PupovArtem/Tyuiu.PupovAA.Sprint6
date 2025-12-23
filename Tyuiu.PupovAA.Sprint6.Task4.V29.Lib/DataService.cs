@@ -1,7 +1,7 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿
 namespace Tyuiu.PupovAA.Sprint6.Task4.V29.Lib
 {
-    public class DataService : ISprint6Task4V29
+    public class DataService
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
