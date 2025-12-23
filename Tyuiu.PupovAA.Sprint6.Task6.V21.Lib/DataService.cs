@@ -33,7 +33,7 @@ namespace Tyuiu.PupovAA.Sprint6.Task6.V21.Lib
             foreach (string word in parts)
             {
 
-                if (word.Contains('g') || word.Contains('G'))
+                if (word.Contains('g'))
                 {
                     resultWords.Add(word);
                 }
